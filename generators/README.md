@@ -23,6 +23,7 @@ Value yield by generator always has `value` and `done` properties
 Applications:
 - To implement an infinite loop which will not freeze the program because one step will be executed at a time.
 - As an iterator
+- Infinite scroll
 
 
 > ** IMPORTANT **
