@@ -24,7 +24,12 @@ Applications:
 - To implement an infinite loop which will not freeze the program because one step will be executed at a time.
 - As an iterator
 - Infinite scroll
+    > for infinite scroll, we basically track user scroll action and based on some offet position, generator function kicks in and returns some part of data, and we can return once all of the data is returned
+- Pagination
+- Used in Redux Saga
 
+<br>
+<hr>
 
 > **IMPORTANT**
 > 
