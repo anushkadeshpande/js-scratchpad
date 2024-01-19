@@ -26,7 +26,7 @@ Applications:
 - Infinite scroll
 
 
-> ** IMPORTANT **
+> **IMPORTANT**
 > 
 > Arrow functions *cannot* be generator functions
 >
