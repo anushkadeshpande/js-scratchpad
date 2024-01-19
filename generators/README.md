@@ -40,3 +40,10 @@ Applications:
 > - Arrow functions do not have a prototype chain means they do not inherit from `Function.prototype`. Hence, they cannot have next, return and throw properties 
 > - Arrow functions do not have their own *this* object, instead they lexically bind this (use the one from it's closure). And generators need *this* to reference the functions scope
 > - They do not have their own `arguments` object
+
+
+
+<hr>
+
+Resources:
+- https://blog.stackademic.com/dont-be-afraid-of-javascript-generators-15c998aea652
