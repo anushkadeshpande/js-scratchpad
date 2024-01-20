@@ -47,3 +47,4 @@ Applications:
 
 Resources:
 - https://blog.stackademic.com/dont-be-afraid-of-javascript-generators-15c998aea652
+- https://www.youtube.com/watch?v=IJ6EgdiI_wU&pp=ygUdZ2VuZXJhdG9yIGZ1bmN0aW9uIGphdmFzY3JpcHQ%3D
