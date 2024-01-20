@@ -1,5 +1,13 @@
 ##### *JavaScript is a synchronous, single-threaded language and everything in JavaScript happens inside the Execution Context*
 
+Table of contents:
+- [Code Execution](#code-execution)
+- [Call Stack](#call-stack)
+- [Hoisting](#hoisting)
+
+<hr>
+
+### Code Execution
 Whenever we run a JS code, an *Execution Context* is created.
 The execution context has 2 components - 
 
@@ -43,10 +51,37 @@ After that, when the `square` function is invoked,
 var square2 = square(n)
 ```
 another execution context is created and memory is allocated to each and every component that is present inside the function and this execution context is pushed into the main execution context.
-![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/713c065f-d9c3-4f7c-a36a-1378606bc7f1)
+![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/edb2f90b-d081-4dd6-8aeb-e0b4d275d667)
 
 After this, the code inside the function is executed and accordingly values are allocated to `num` and `ans` variables.
 
 When we come to the `return` statement, it finds the value to be returned in its local memory and the value will replace the `undefined` allocated to `square2` with the return value and the execution context for the square function will be deleted, and the program will continue to execute the next statement.
 
 Once the program finishes executing, the execution context is deleted.
+
+
+### Call Stack:
+The call stack manages the execution context.
+
+Whenever a js code is run, the global execution context is pushed into the stack and any execution contexts created during execution will be pushed into the call stack.
+
+*Call stack maintains the order of execution of execution contexts.*
+
+> FYI, Call stack is also called as
+> - Execution Context Stack
+> - Program Stack
+> - Control Stack
+> - Runtime Stack
+> - Machine Stack 
+
+
+
+### Hoisting:
+Accessing variables and functions even before initializing it.
+
+> Functions can anyways be accessed as the entire function body is copied in the execution context before execution begins.
+> And for variables, they are initialized as undefined, so if they are accessed before intialization, `undefined` will be returned.
+
+> Note:
+> Arrow functions are basically variables, so they are hoisted as `undefined` instead of the function body.
+> So, if we try to execute an arrow function before declaration, an error will be thrown `x is not a function`
