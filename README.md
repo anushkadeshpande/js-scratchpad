@@ -43,3 +43,10 @@ After that, when the `square` function is invoked,
 var square2 = square(n)
 ```
 another execution context is created and memory is allocated to each and every component that is present inside the function and this execution context is pushed into the main execution context.
+![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/713c065f-d9c3-4f7c-a36a-1378606bc7f1)
+
+After this, the code inside the function is executed and accordingly values are allocated to `num` and `ans` variables.
+
+When we come to the `return` statement, it finds the value to be returned in its local memory and the value will replace the `undefined` allocated to `square2` with the return value and the execution context for the square function will be deleted, and the program will continue to execute the next statement.
+
+Once the program finishes executing, the execution context is deleted.
