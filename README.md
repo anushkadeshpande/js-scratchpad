@@ -4,6 +4,7 @@ Table of contents:
 - [Code Execution](#code-execution)
 - [Call Stack](#call-stack)
 - [Hoisting](#hoisting)
+- [Higher Order Functions](#higher-order-functions)
 
 <hr>
 
@@ -85,3 +86,8 @@ Accessing variables and functions even before initializing it.
 > Note:
 > Arrow functions are basically variables, so they are hoisted as `undefined` instead of the function body.
 > So, if we try to execute an arrow function before declaration, an error will be thrown `x is not a function`
+
+
+
+### Higher Order Functions:
+Higher Order Functions are functions that take a function as an argument or return a function.
