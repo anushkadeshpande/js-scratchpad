@@ -93,6 +93,7 @@ Variables declared with `let` and `const` are hoisted, but a bit differently.
 Whenever a variable is declared using either of `let` and `const`, memory is allocated to them, but in a different space.
 
 Normally, variables declared with `var` are allocated memory in the `Global Memory Space` but in case of `let` and `const` declarations, they are stored in a separate memory space `Script`.
+
 ![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/e5c65ff4-03a0-48b9-b9e8-018fdd397547)
 
 These variables cannot be accessed from there and hence are known to be in `Temporal Dead Zone`.
