@@ -96,12 +96,18 @@ Normally, variables declared with `var` are allocated memory in the `Global Memo
 
 ![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/e5c65ff4-03a0-48b9-b9e8-018fdd397547)
 
-These variables cannot be accessed from there and hence are known to be in `Temporal Dead Zone`.
+These variables cannot be accessed from there before initialization and hence are known to be in `Temporal Dead Zone`.
 
 `Temporal Dead Zone` is the time between the declaration of variables and their initialization.
 
+Also, variables declared using `var` can be accessed via `window` or `this` object whereas variables declared with `let` cannot.
+
+> If we try to access a variable which is not declared in the code, we get `Uncaught ReferenceError: x is not defined`
+> If it is declared using `var` and is accessed before declaration, the value will be `undefined` before initialization (due to hositing)
+> But, if the variable is declared using `let` and is accessed before initialization, we get `Uncaught ReferenceError: cannot access x before initialization`
 
 
-
+> Side note:
+> If we declare a `const` variable and do not initialize it, it throws a `Syntax error`, but when we try to reinitialize it, it throws a `TypeError`
 ### Higher Order Functions:
 Higher Order Functions are functions that take a function as an argument or return a function.
