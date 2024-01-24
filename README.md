@@ -4,6 +4,9 @@ Table of contents:
 - [Code Execution](#code-execution)
 - [Call Stack](#call-stack)
 - [Hoisting](#hoisting)
+- [Block Scope and Shadowing](#block-scope-and-shadowing)
+  - [Shadowing](#shadowing)
+  - [Illegal Shadowing](#illegal-shadowing)
 - [Higher Order Functions](#higher-order-functions)
 
 <hr>
@@ -109,5 +112,52 @@ Also, variables declared using `var` can be accessed via `window` or `this` obje
 
 > Side note:
 > If we declare a `const` variable and do not initialize it, it throws a `Syntax error`, but when we try to reinitialize it, it throws a `TypeError`
+
+
+### Block Scope and Shadowing:
+A block is anything surrounded by `{}`. A block is also called as a `Compound Statement`.
+
+`let` and `const` are block scoped meaning they are stored in a separate memory location (Block) whereas `var` is global scoped, meaning it is stored in the global memory space.
+
+|                                              |                                              |
+| -------------------------------------------- | -------------------------------------------- |
+| ![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/9f4691db-2f59-4fc9-ba90-eb361cddc346) | ![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/810082d5-43b0-4d2f-bf48-0fea447fb0a8) |
+
+`let` and `const` cannot be accessed outside their block.
+
+#### Shadowing:
+If we have variables with same name outside the block, they are shadowed i.e the value declared inside the block will override the one declared outside.
+
+But `let` and `const` variables are not shadowed as they are re-created in the block scope, unlike the `var` ones which share the same memory location.
+
+
+##### Illegal Shadowing:
+Consider this example:
+
+```js
+❌
+let a = 20
+{
+  var a = 20
+}
+```
+This code throws `Uncaught SyntaxError: Identifier 'a' has already been declared`
+
+But we can shadow a let using let.
+
+Also, we can do this:
+
+```js
+✅
+var a = 20
+{
+  let a = 20
+}
+```
+
+> Hint: Boundary of the scope should not be crossed
+
+
+
 ### Higher Order Functions:
 Higher Order Functions are functions that take a function as an argument or return a function.
