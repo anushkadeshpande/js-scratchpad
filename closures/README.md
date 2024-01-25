@@ -25,6 +25,7 @@ var outermostFunction = z();
 ```
 
 When the innermost function `y` is invoked, we can observe the following closures that it has formed with x and z:
+
 ![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/e5daf428-30a0-48cf-b8f7-56b0dadc0934)
 
 
