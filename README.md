@@ -164,7 +164,8 @@ var a = 20
 
 ### Closure
 A function bind together with its lexical environment forms a closure.
-For more details check this directory: 
+
+For more details check this directory: <a href="https://github.com/anushkadeshpande/js-scratchpad/blob/d236bb5066afb52f9b73e6a53d5c375878120c98/closures/README.md">Closures</a>
 
 
 <hr>
