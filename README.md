@@ -7,6 +7,7 @@ Table of contents:
 - [Block Scope and Shadowing](#block-scope-and-shadowing)
   - [Shadowing](#shadowing)
   - [Illegal Shadowing](#illegal-shadowing)
+- [Closure](#closure)
 - [Higher Order Functions](#higher-order-functions)
 
 <hr>
@@ -63,6 +64,7 @@ When we come to the `return` statement, it finds the value to be returned in its
 
 Once the program finishes executing, the execution context is deleted.
 
+<hr>
 
 ### Call Stack:
 The call stack manages the execution context.
@@ -78,7 +80,7 @@ Whenever a js code is run, the global execution context is pushed into the stack
 > - Runtime Stack
 > - Machine Stack 
 
-
+<hr>
 
 ### Hoisting:
 Accessing variables and functions even before initializing it.
@@ -113,6 +115,7 @@ Also, variables declared using `var` can be accessed via `window` or `this` obje
 > Side note:
 > If we declare a `const` variable and do not initialize it, it throws a `Syntax error`, but when we try to reinitialize it, it throws a `TypeError`
 
+<hr>
 
 ### Block Scope and Shadowing:
 A block is anything surrounded by `{}`. A block is also called as a `Compound Statement`.
@@ -157,7 +160,14 @@ var a = 20
 
 > Hint: Boundary of the scope should not be crossed
 
+<hr>
 
+### Closure
+A function bind together with its lexical environment forms a closure.
+For more details check this directory: 
+
+
+<hr>
 
 ### Higher Order Functions:
 Higher Order Functions are functions that take a function as an argument or return a function.
