@@ -8,6 +8,7 @@ Table of contents:
   - [Shadowing](#shadowing)
   - [Illegal Shadowing](#illegal-shadowing)
 - [Closure](#closure)
+- [Event Loop](#event-loop)
 - [Higher Order Functions](#higher-order-functions)
 
 <hr>
@@ -167,6 +168,12 @@ A function bind together with its lexical environment forms a closure.
 
 For more details check this directory: <a href="https://github.com/anushkadeshpande/js-scratchpad/blob/d236bb5066afb52f9b73e6a53d5c375878120c98/closures/README.md">Closures</a>
 
+
+<hr>
+
+### Event Loop
+
+![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/22c29abb-fc68-4f36-ae15-442def3a4ccc)
 
 <hr>
 
