@@ -14,7 +14,7 @@ Consider the following example:
 
 Here, first of all, `setTimeout` forms a closure with the `function x()` (remembers the reference to i)
 
-Now, the setTimeout takes a callback and puts it in the callback queue. And proceeds to execute the rest of the code.
+Now, the setTimeout takes a callback and starts the timer of the WebAPI and then the rest of the code is executed.
 
 But the code outputs:
 
@@ -25,6 +25,6 @@ Hiiiii
 
 The `Hiiiii` is printed first. Why?
 
-JavaScript is a synchronous language, meaning it does not wait for anything. So when the setTimeout is encountered, it is pushed into the callback queue and the code execution proceeds to the next line. Once, the entire code is executed, the callback to setTimeout is pushed into the call stack from the callback queue (of course after the specified time is passed) and then the callback function is executed. 
+JavaScript is a synchronous language, meaning it does not wait for anything. So when the setTimeout is encountered, it starts the timer provided by the WebAPI and the code execution proceeds to the next line. Once the time specified in the setTimeout is elapsed, the callback function passed to the setTimeout is pushed into the callback queue and once the entire code is done executing and the call stack becomes empty, the callback to setTimeout is pushed into the call stack from the callback queue and then the callback function is executed. 
 
 `Event Loop` is a component in the browsers that is responsible for putting tasks from callback queue into the call stack.
