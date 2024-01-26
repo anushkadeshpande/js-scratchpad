@@ -173,7 +173,7 @@ For more details check this directory: <a href="https://github.com/anushkadeshpa
 
 ### Event Loop
 
-![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/22c29abb-fc68-4f36-ae15-442def3a4ccc)
+![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/304d457d-9c84-4e62-bf85-f323563eb34c)
 
 <hr>
 
