@@ -23,9 +23,9 @@ ____________________________________________
 
 Why?
 The setTimeout forms a closure with function x, meaning it remembers the reference to the variables declared in x i.e i
-When x is executed, the setTimeout is pushed to the callback queue and the code proceeds to execute, and hence the for loop also continues executing thereby incrementing the value of i to 6
+When x is invoked and setTimeout is encountered, the browser Web API timer kicks in and the code proceeds to execute, and hence the for loop also continues executing thereby incrementing the value of i to 6
 
-Once the loop completes and the delay specified in setTimeout is lapsed, the callback functions are moved to the call stack and start executing.
+Once the loop completes and the delay specified in setTimeout is lapsed the callback function is pushed to callback queue, and once the call stack becomes empty, the callback functions are moved to the call stack and start executing.
 These callback functions have a reference to the variable i (from the closure) and since the value of i is 6 now, all of the callbacks print 6
 
 
