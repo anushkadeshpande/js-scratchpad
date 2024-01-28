@@ -44,6 +44,7 @@ addToCart()
 
 With this, we revoked the control to call `checkout()` from `addToCart()`, and so on, basically, got rid of the callback hell and also gave the control to the main application.
 
+> FYI, this is known as promise chaining
 
 But, 
 ### What does the promise actually mean?
@@ -62,6 +63,7 @@ It has a PromiseState which has either of the values:
 - rejected
 
 > Promise objects are immutable
+
 > They can be resolved only once
 
 When a promise is in `pending` state, it means we're still waiting for the operation to be completed
