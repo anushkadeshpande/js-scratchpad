@@ -2,12 +2,11 @@
 
 Consider this example
 ```js
-addToCart().then(() => {
-  checkout().then(() => {
-    proceedToPayment().then(() => {
-      showAcknowledgement().then(() => {
-        doSomethingElse().then(....)
-      })
+addToCart(cart, function(cart) {
+  checkout(cart, function(orderId) {
+    proceedToPayment(orderId, function(status) {
+      showAcknowledgement(function() {
+        doSomethingElse()
     })
   })
 })
@@ -51,6 +50,8 @@ But,
 
 Promise is like a placeholder for the result of an action that takes some time to complete. It represents a future value or error that will be available at some point.
 
+*Promise is an object that represents eventual completion of an async operation.*
+
 This is what a Promise object looks like:
 
 ![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/c96924d1-5c80-4495-bed9-2cb55675d5c0)
@@ -59,6 +60,9 @@ It has a PromiseState which has either of the values:
 - pending
 - fulfilled
 - rejected
+
+> Promise objects are immutable
+> They can be resolved only once
 
 When a promise is in `pending` state, it means we're still waiting for the operation to be completed
 
