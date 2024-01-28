@@ -47,7 +47,7 @@ With this, we revoked the control to call `checkout()` from `addToCart()`, and s
 > FYI, this is known as promise chaining
 
 But, 
-### What does the promise actually mean?
+### What does promise actually mean?
 
 Promise is like a placeholder for the result of an action that takes some time to complete. It represents a future value or error that will be available at some point.
 
