@@ -71,3 +71,28 @@ When a promise is in `pending` state, it means we're still waiting for the opera
 When it is in `fulfilled` state, it means the operation is completed
 
 When it is in `rejected` state, it means some error has been encountered and the operation could not complete successfully
+
+
+## Promise APIs:
+
+1. `Promise.all([p1, p2, p3])` :
+
+    - Used to handle multiple promsies simultaneously.
+    - Returns an array of results for each of the promises.
+    - Will wait for all calls to finish and then will give the response.
+    - If any of the promises are rejected, Promise.all will throw an error and will not wait for other promises.
+      
+2. `Promise.allSettled([p1, p2, p3])` :
+   
+    - Waits for all promises to get settled, and then will return all responses regardless of success or failure
+      
+3. `Promise.race([p1, p2, p3])` :
+
+   - Will return the value of first promise to be settled
+   - If 1st promise is rejected, error will be thrown
+   - Will not wait for other promises to settle
+  
+4. `Promise.any([p1, p2, p3])` :
+
+    - Will wait for the 1st success
+    - If all fail, will return an aggregated error (array of reject messages of all promises)
