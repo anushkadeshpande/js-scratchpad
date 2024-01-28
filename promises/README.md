@@ -44,3 +44,24 @@ addToCart()
 ```
 
 With this, we revoked the control to call `checkout()` from `addToCart()`, and so on, basically, got rid of the callback hell and also gave the control to the main application.
+
+
+But, 
+### What does the promise actually mean?
+
+Promise is like a placeholder for the result of an action that takes some time to complete. It represents a future value or error that will be available at some point.
+
+This is what a Promise object looks like:
+
+![image](https://github.com/anushkadeshpande/js-scratchpad/assets/53345232/c96924d1-5c80-4495-bed9-2cb55675d5c0)
+
+It has a PromiseState which has either of the values:
+- pending
+- fulfilled
+- rejected
+
+When a promise is in `pending` state, it means we're still waiting for the operation to be completed
+
+When it is in `fulfilled` state, it means the operation is completed
+
+When it is in `rejected` state, it means some error has been encountered and the operation could not complete successfully
