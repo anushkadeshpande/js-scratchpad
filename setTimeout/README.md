@@ -27,4 +27,4 @@ The `Hiiiii` is printed first. Why?
 
 JavaScript is a synchronous language, meaning it does not wait for anything. So when the setTimeout is encountered, it starts the timer provided by the WebAPI and the code execution proceeds to the next line. Once the time specified in the setTimeout is elapsed, the callback function passed to the setTimeout is pushed into the callback queue and once the entire code is done executing and the call stack becomes empty, the callback to setTimeout is pushed into the call stack from the callback queue and then the callback function is executed. 
 
- <a href="event-loop">`Event Loop`</a> is a component in the browsers that is responsible for putting tasks from callback queue into the call stack.
+ <a href="https://github.com/anushkadeshpande/js-scratchpad/tree/5a7beef0548753b26d1b5fc1d6f487e2e9a466c3/event-loop">`Event Loop`</a> is a component in the browsers that is responsible for putting tasks from callback queue into the call stack.
