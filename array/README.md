@@ -9,3 +9,5 @@ But still there are ways to achieve that.
 Check this out <a href=https://github.com/anushkadeshpande/js-scratchpad/blob/eb44cdb8e17c5adaa96253f8cae63b64e52395ed/array/gotchas/breakingForEach.js>       breakingForEach.js </a>
 
 > PS: Never ever do this 🫠💀
+
+Reference: https://javascript.plainenglish.io/interview-can-you-stop-foreach-in-javascript-724d9d76fd72
