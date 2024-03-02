@@ -32,10 +32,10 @@ array2.forEach((it) => {
 // 3. remove all elements using splice
 let array3 = [1, 2, 3, 4, 5]
 
-array.forEach((it, i) => {
+array3.forEach((it, i) => {
   console.log(it)
   if (it >= 3) {
-    array.splice(i + 1, array.length - i)
+    array3.splice(i + 1, array3.length - i)
   }
 })
 
