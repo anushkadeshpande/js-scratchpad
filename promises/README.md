@@ -96,3 +96,7 @@ When it is in `rejected` state, it means some error has been encountered and the
 
     - Will wait for the 1st success
     - If all fail, will return an aggregated error (array of reject messages of all promises)
+
+
+## How to annul promises?
+https://webdeveloper.beehiiv.com/p/cancel-promises-javascript
